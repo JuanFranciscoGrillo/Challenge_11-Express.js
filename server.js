@@ -3,8 +3,8 @@ const express = require('express');
 const app = express(); // Create Express app instance
 
 // Import custom route modules
-const api_Routes = require('./routes/ApiRoutes/ApiRoutes');
-const html_Routes = require('./routes/htmlRoutes/htmlRoutes');
+const api_Routes = require('./routes/apiroutes');
+const html_Routes = require('./routes/htmlroutes');
 
 // Set the server port
 const PORT = process.env.PORT || 3001;
