@@ -7,8 +7,8 @@ const fs = require('fs');
 const path = require('path');
 
 
-const apiRoutes = require('./routes/apiRoutes');
-const htmlRoutes = require('./routes/htmlRoutes');
+const api_Routes = require('./routes/apiRoutes');
+const html_Routes = require('./routes/htmlRoutes');
 
 
 app.use(express.urlencoded({
@@ -18,8 +18,8 @@ app.use(express.urlencoded({
 app.use(express.json());
 
 
-app.use('/api', apiRoutes);
-app.use('/', htmlRoutes);
+app.use('/api', api_Routes);
+app.use('/', html_Routes);
 
 app.listen(PORT, () => {
     //debugging
